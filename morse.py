@@ -1,4 +1,7 @@
 #123s0njdfopfwerw
+
+
+
 morse = {
     'A':'·—', 
     'B':'—···', 
@@ -34,7 +37,7 @@ morse = {
     '4': '····—',
     '5': '·····',
     '6': '—····',
-    '7': '——···', 
+    '7': '——···',
     '8':'———··',
     '9': '————·',
     '.': '·—·—·—',
@@ -42,10 +45,20 @@ morse = {
     '?': '··——··',
     '"': '·—··—·',
     '!': '——··——'}
+reverso = {}
+for key in morse:
+        valor = morse[key]
+        reverso[valor] = key
 
-cadena = 'Hola, mundo'.upper()
 
 
-for letra in cadena:
-    if letra in morse:
-        print("{} - {}".format(letra, morse[letra]))
+def toMorse(texto):
+    resultado = ""
+    
+    for letra in texto.upper():
+        if letra in morse:
+            resultado += morse[letra]
+            resultado += "%"
+        else:
+            resultado += "%"
+    return resultado
