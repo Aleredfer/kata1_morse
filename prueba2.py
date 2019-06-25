@@ -1,7 +1,11 @@
 import morse
+import time
 
 mensaje = input("dime algo: ")
-codigo = input("dime algo: ")
-morse.toMorse(mensaje)
+telegrama = morse.toMorse(mensaje)
+print(telegrama)
 
-morse.toPlain(codigo)
+original = morse.toPlain(telegrama)
+print(original)
+
+print(time.strftime("%d/%m/%Y", time.gmtime()))
