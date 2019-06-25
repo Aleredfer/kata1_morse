@@ -85,8 +85,9 @@ reverso = {
     '··——··': '?', 
     '·—··—·': '"', 
     '——··——': '!'}
-    
-#for key in morse:
+
+#reverso = {}   #con estas 4 líneas se forma el diccionario
+#for key in morse:     
     #valor = morse[key]
     #reverso[valor] = key
 
