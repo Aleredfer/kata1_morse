@@ -71,6 +71,7 @@ class Translator(ttk.Frame):
             return                              # con el return sale de la función, si nolo cumple se va a la siguiente (si no cumple las 2 ejecuta self.traduccionDirecta)
         
 
+
         if msg.strip() == "":
             messagebox.showwarning("Aviso", "Debe informar el mensaje", parent=self)
             return
