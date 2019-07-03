@@ -77,7 +77,7 @@ class Translator(ttk.Frame):
             return
 
         if self.traduccionDirecta:
-            morse.telegram(sender, receiver, msg) 
+            morse.telegram(sender, receiver, msg)  #es lo mismo que la linea de abajo
         else:
             morse.telegram(self.sender.get(), self.receiver.get(), self.destino_text.get("1.0", END)) 
 
